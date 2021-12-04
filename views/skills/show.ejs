@@ -1,5 +1,8 @@
-<link rel='stylesheet' href='/stylesheets/style.css' />
+<%- include('../partials/head') %> 
 <body>
-    <h3 class="skillName"><%= skill.skill %></h3>
-    <h3>Level: <%= skill.level %></h3>
+    <h1 class="skillName"><%= skill.skill %></h1>
+    <div id="border">
+        <h3>Level: <%= skill.level %></h3>
+        <h3>Experience: <%= skill.experience %></h3>
+    </div>
 </body>

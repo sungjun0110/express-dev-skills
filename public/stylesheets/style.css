@@ -1,5 +1,10 @@
 body {
   padding: 50px;
+  position: fixed;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -10,4 +15,28 @@ body {
 a {
   color: #00B7FF;
   font-size: 20px;
+}
+
+#listBtn {
+  margin-top: 20px;
+}
+
+h1 {
+  border-bottom: 3px solid brown;
+  padding: 0 20px 10px;
+}
+
+#border {
+  border: 2px solid #999;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  line-height: 40px;
 }
