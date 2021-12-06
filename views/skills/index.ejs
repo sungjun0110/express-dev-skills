@@ -6,10 +6,11 @@
     <ul id="border">
         <% skills.forEach(function(skill) { %>
             <li>
-                <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
+                <a href="/skills/<%= skill.id %>"><%= skill.name %></a>
                 - Level: <%= skill.level %>
             </li>
         <% }); %>
+        <a href="/skills/new">Add a new skill</a>
     </ul>
 </body>
 </html>

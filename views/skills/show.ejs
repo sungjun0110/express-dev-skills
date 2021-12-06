@@ -1,8 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
 <%- include('../partials/head') %> 
 <body>
-    <h1 class="skillName"><%= skill.skill %></h1>
+    <h1 class="skillName"><%= skill.name %></h1>
     <div id="border">
         <h3>Level: <%= skill.level %></h3>
         <h3>Experience: <%= skill.experience %></h3>
+        <form action="/skills/<%= skill.id %>?_method=DELETE" class="delete-form"   method="POST">
+            <button type="submit">DELETE</button>
+        </form>
     </div>
 </body>
+</html>
