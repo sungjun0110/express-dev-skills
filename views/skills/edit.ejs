@@ -2,10 +2,10 @@
 <html lang="en">
 <%- include('../partials/head'); %>
 <body>
-    <h1>New Skill</h1>
-    <form action="/skills" method="POST" autocomplete="off">
+    <h1>Edit a Skill</h1>
+    <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
         <label>Skill name:</label>
-        <input type="text" name="name">
+        <input type="text" name="name" value="<%= skill.name %>"">
         <label>Level:</label>
         <select name="level">
             <option value="Beginner">Beginner</option>
@@ -14,7 +14,7 @@
         </select>
         <label>Experience:</label>
         <input type="number" name="experience" min="0" max="100">
-        <button type="submit">Save a new skill</button>
+        <button type="submit">Update</button>
     </form>
 </body>
 </html>

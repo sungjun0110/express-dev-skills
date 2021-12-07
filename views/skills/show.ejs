@@ -6,8 +6,11 @@
     <div id="border">
         <h3>Level: <%= skill.level %></h3>
         <h3>Experience: <%= skill.experience %></h3>
+        <form action="/skills/<%= skill.id %>/edit" class="delete-form">
+            <button type="submit">Edit</button>
+        </form>
         <form action="/skills/<%= skill.id %>?_method=DELETE" class="delete-form"   method="POST">
-            <button type="submit">DELETE</button>
+            <button type="submit">Delete</button>
         </form>
     </div>
 </body>
